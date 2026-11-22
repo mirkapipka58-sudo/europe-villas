@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Villas | Europe Villas & Apartments</title>
+  <meta name="description" content="Over 100 luxury villas, penthouses and chalets for rent across Europe.">
+  <meta name="theme-color" content="#08111f">
+  <link rel="icon" href="assets/img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="villas" data-title="meta.villas">
+  <div id="preloader"><div class="pl-panel top"></div><div class="pl-panel bottom"></div><div class="pl-inner"><img class="pl-logo" src="assets/img/logo.jpg" alt=""><div class="pl-count"><span class="pl-num">0</span><small>%</small></div><div class="pl-line"><i></i></div><div class="pl-text" data-i18n="loader.text"></div></div></div>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="ph-bg" data-parallax="0.25" style="background-image:url('assets/img/villas/mila.webp'), var(--grad-deep)"></div>
+      <div class="ph-overlay"></div>
+      <div class="container ph-content">
+        <span class="eyebrow reveal" data-i18n="villas.eyebrow"></span>
+        <h1 class="ph-title split-reveal"><span class="split" data-i18n="villas.title"></span></h1>
+        <p class="ph-sub reveal" data-delay="200" data-i18n="villas.sub"></p>
+      </div>
+      <svg class="ph-wave" viewBox="0 0 1440 70" preserveAspectRatio="none"><path fill="currentColor" d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,40 L1440,70 L0,70 Z"/></svg>
+    </section>
+
+    <section class="container catalog">
+      <div class="filters reveal">
+        <button class="btn btn-outline btn-sm f-toggle" id="f-toggle" type="button">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span data-i18n="f.filters"></span>
+        </button>
+        <div class="f-body">
+          <div class="f-row">
+            <div class="f-field">
+              <label class="f-label" for="f-q">&nbsp;</label>
+              <div class="f-input"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input type="text" id="f-q" data-i18n-ph="f.search"></div>
+            </div>
+            <div class="f-field"><label for="f-country" data-i18n="f.country"></label><select id="f-country"></select></div>
+            <div class="f-field"><label for="f-type" data-i18n="f.type"></label><select id="f-type"></select></div>
+            <div class="f-field"><label for="f-guests" data-i18n="f.guests"></label><select id="f-guests"></select></div>
+            <div class="f-field"><label for="f-beds" data-i18n="f.beds"></label><select id="f-beds"></select></div>
+            <div class="f-field"><label for="f-sort" data-i18n="f.sort"></label><select id="f-sort"></select></div>
+          </div>
+          <div class="f-row">
+            <div class="f-field">
+              <span class="f-label" data-i18n="f.price"></span>
+              <div class="price-box"><input type="range" id="f-price"><output id="f-price-val"></output></div>
+            </div>
+            <label class="switch"><input type="checkbox" id="f-pool"><i></i><span data-i18n="f.pool"></span></label>
+            <label class="switch"><input type="checkbox" id="f-sea"><i></i><span data-i18n="f.sea"></span></label>
+            <span></span>
+            <button class="f-reset" id="f-reset" type="button"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg><span data-i18n="f.reset"></span></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="f-regions"></div>
+      <div class="v-meta"><span id="v-count"></span></div>
+      <div class="villa-grid" id="v-grid"></div>
+      <div class="more-wrap"><button class="btn btn-dark magnetic" id="v-more"><span data-i18n="villas.more"></span></button></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/i18n-pt-uk.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pages.js"></script>
+</body>
+</html>
